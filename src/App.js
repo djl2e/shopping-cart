@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import Products from './components/pages/products/Products';
 import Contact from './components/pages/Contact';
 import Cart from './components/cart/Cart';
+import './css/App.css';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
