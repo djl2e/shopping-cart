@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/pages/Home';
 import Products from './components/pages/products/Products';
