@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/Home.css';
+import mainPage from '../../img/main-page.jpg';
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
           <button type="submit" id="shop-button">Shop Now</button>
         </Link>
       </div>
-      <img alt="main page" />
+      <img src={mainPage} alt="main page" id="main-page-img" />
     </div>
   );
 }

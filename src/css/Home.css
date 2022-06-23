@@ -1,4 +1,14 @@
+:root {
+  --button-color: rgba(0, 70, 200);
+}
+
+p {
+  margin: 0;
+}
+
 .home {
+  box-sizing: border-box;
+  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,12 +17,39 @@
 
 .home-info {
   width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #sub-home-text {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 #main-home-text {
   font-size: 50px;
+  line-height: 80px;
+  font-weight: bold;
 }
+
+#main-page-img {
+  height: 400px;
+  width: auto;
+}
+
+#shop-button {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--button-color);
+  border: solid 4px var(--button-color);
+  background-color: inherit;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: all 0.4s;
+}
+
+#shop-button:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200);
+}
+
