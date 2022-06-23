@@ -14,7 +14,7 @@ function App() {
   }, [isCartOpen]);
 
   return (
-    <BrowserRouter>
+    <div className="container">
       <Header cartClicked={cartClicked} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
       </Routes>
       <Cart />
-    </BrowserRouter>
+    </div>
   );
 }
 
