@@ -1,5 +1,5 @@
 :root {
-  --button-color: rgba(0, 70, 200);
+  --button-color: rgba(120, 170, 255);
 }
 
 p {
@@ -8,7 +8,6 @@ p {
 
 .home {
   box-sizing: border-box;
-  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +23,7 @@ p {
 
 #sub-home-text {
   font-size: 20px;
+  color: rgba(100, 100, 100);
 }
 
 #main-home-text {
@@ -35,6 +35,7 @@ p {
 #main-page-img {
   height: 400px;
   width: auto;
+  border-radius: 10px;
 }
 
 #shop-button {
@@ -42,7 +43,7 @@ p {
   font-weight: bold;
   color: var(--button-color);
   border: solid 4px var(--button-color);
-  background-color: inherit;
+  background-color: white;
   border-radius: 20px;
   padding: 10px 30px;
   transition: all 0.4s;
@@ -50,6 +51,6 @@ p {
 
 #shop-button:hover {
   cursor: pointer;
-  background-color: rgba(200, 200, 200);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 

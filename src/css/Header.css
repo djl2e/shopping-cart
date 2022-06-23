@@ -41,3 +41,7 @@ a {
   height: 35px;
   width: auto;
 }
+
+#main-page-img {
+  border-radius: 5px;
+}
