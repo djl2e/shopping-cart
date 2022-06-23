@@ -5,10 +5,14 @@
   gap: 50px;
 }
 
+.home-info {
+  width: 35vw;
+}
+
 #sub-home-text {
   font-size: 12px;
 }
 
 #main-home-text {
-  font-size: 20px;
+  font-size: 50px;
 }
