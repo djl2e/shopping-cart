@@ -4,7 +4,7 @@ import '../../css/Home.css';
 
 function Home() {
   return (
-    <div className="home">
+    <div className="page home">
       <div className="home-info">
         <p id="sub-home-text">Voted Best Phone Case of 2021</p>
         <p id="main-home-text">Let Our Phone Case Complete Your Fashion Phase</p>

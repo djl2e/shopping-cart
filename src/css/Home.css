@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#sub-home-text {
+  font-size: 12px;
+}
+
+#main-home-text {
+  font-size: 20px;
+}
