@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 a {
   text-decoration: none;
@@ -15,7 +15,7 @@ a {
 }
 
 .logo {
-  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Fascinate', cursive;
   font-size: 70px;
   color: rgba(50, 50, 50);
 }
