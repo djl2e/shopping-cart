@@ -21,6 +21,7 @@ body {
 }
 
 .page {
+  box-sizing: border-box;
   height: calc(100vh - var(--header-height));
   background-image: url('../img/main-background.png');
   background-position: center;
