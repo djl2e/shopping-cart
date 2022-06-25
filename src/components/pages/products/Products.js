@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../../../data/data';
 import ProductCard from './ProductCard';
+import '../../../css/Product.css';
 
 function Products(props) {
   const { addProductToCart } = props;
