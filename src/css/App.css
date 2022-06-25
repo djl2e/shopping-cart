@@ -28,3 +28,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.cart-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.off {
+  visibility: visible;
+}
