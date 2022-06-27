@@ -40,5 +40,5 @@ body {
 }
 
 .off {
-  visibility: visible;
+  visibility: hidden;
 }
