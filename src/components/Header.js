@@ -4,7 +4,7 @@ import '../css/Header.css';
 import cartIcon from '../img/cart-icon.png';
 
 function Header(props) {
-  const { cardClicked } = props;
+  const { cartClicked } = props;
 
   return (
     <div className="header">
@@ -15,7 +15,7 @@ function Header(props) {
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
         <Link to="/contact">Contact</Link>
-        <button type="submit" id="cart-button" onClick={cardClicked}>
+        <button type="submit" id="cart-button" onClick={() => cartClicked()}>
           <img src={cartIcon} alt="cart icon" id="cart-img" />
         </button>
       </nav>
