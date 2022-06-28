@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 
 function Cart(props) {
   const {
-    isCartOpen, cartItems, decreaseQuantity, increaseQuantity, closeCart,
+    isCartOpen, cartItems, decreaseQuantity, increaseQuantity, closeCart, totalPrice,
   } = props;
 
   let cartClassName = 'cart';
@@ -31,9 +31,9 @@ function Cart(props) {
       <div className="cart-item-container">
         {items}
       </div>
-      <p>Total: $0.00</p>
-      <button type="submit" onClick={closeCart}>Checkout</button>
-      <button type="submit" onClick={closeCart}>Close</button>
+      <p id="total-price">{`Total: $${totalPrice}`}</p>
+      <button id="checkout-button" type="submit" onClick={closeCart}>Checkout</button>
+      <button id="close-button" type="submit" onClick={closeCart}>Close</button>
     </div>
   );
 }

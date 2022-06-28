@@ -2,6 +2,7 @@
 /* eslint-disable import/no-dynamic-require */
 import React from 'react';
 import data from '../../data/data';
+import '../../css/CartItem.css';
 
 function CartItem(props) {
   const {
@@ -15,8 +16,8 @@ function CartItem(props) {
     <div className="cart-item">
       <img src={require(`../../img/product${productId}.jpg`)} alt="cart item" />
       <div className="cart-item-info">
-        <h3>{productData[0]}</h3>
-        <p>{productData[1]}</p>
+        <h3>{productData.name}</h3>
+        <p>{productData.price}</p>
         <div className="quantity-container">
           <button type="submit" className="decrease-button" id={decreaseButtonId} onClick={decreaseQuantity}>-</button>
           <p>{quantity}</p>
