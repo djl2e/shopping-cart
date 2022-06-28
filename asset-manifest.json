@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.e1fc146d.css",
+    "main.js": "/shopping-cart/static/js/main.646e50d9.js",
+    "static/media/product12.jpg": "/shopping-cart/static/media/product12.8ca22da68f7e3fbcd8f0.jpg",
+    "static/media/product10.jpg": "/shopping-cart/static/media/product10.00ebae225887c5f9eaf9.jpg",
+    "static/media/product6.jpg": "/shopping-cart/static/media/product6.fcec8e5d29daec9b9994.jpg",
+    "static/media/product8.jpg": "/shopping-cart/static/media/product8.510a22c6fcce3d4af84c.jpg",
+    "static/media/product3.jpg": "/shopping-cart/static/media/product3.b22232149d146d7d3513.jpg",
+    "static/media/product2.jpg": "/shopping-cart/static/media/product2.2ba65bf72cc720fcdc89.jpg",
+    "static/media/product0.jpg": "/shopping-cart/static/media/product0.71adf1365aa24572bb80.jpg",
+    "static/media/product7.jpg": "/shopping-cart/static/media/product7.2a4d86a27fa6c7008c04.jpg",
+    "static/media/product11.jpg": "/shopping-cart/static/media/product11.23a0957662418d6bacb7.jpg",
+    "static/media/product9.jpg": "/shopping-cart/static/media/product9.2878637c97918cff48e6.jpg",
+    "static/media/product1.jpg": "/shopping-cart/static/media/product1.7b42c0861f2551d55768.jpg",
+    "static/media/product5.jpg": "/shopping-cart/static/media/product5.39bad3481aaa66a1500a.jpg",
+    "static/media/product4.jpg": "/shopping-cart/static/media/product4.387386bd2c49f0c912b9.jpg",
+    "static/media/main-page.jpg": "/shopping-cart/static/media/main-page.ece2fc27283c221ff903.jpg",
+    "static/media/store.jpg": "/shopping-cart/static/media/store.2e74f0606cd10a117db6.jpg",
+    "static/media/main-background.png": "/shopping-cart/static/media/main-background.e11c2f627e5e3eb77b94.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.e1fc146d.css.map": "/shopping-cart/static/css/main.e1fc146d.css.map",
+    "main.646e50d9.js.map": "/shopping-cart/static/js/main.646e50d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1fc146d.css",
+    "static/js/main.646e50d9.js"
+  ]
+}
