@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
@@ -14,6 +15,7 @@ function App() {
   const numProducts = data.length;
 
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [totalPrice, setTotalPrice] = useState(0);
   const [cartItems, setCartItems] = useState([...Array(numProducts).keys()].map((key) => [key, 0]));
 
   let backgroundClassName = 'cart-background';
@@ -35,6 +37,8 @@ function App() {
       const cartItemsCopy = [...cartItems];
       const itemCopy = cartItemsCopy[targetProduct];
       itemCopy[1] -= 1;
+      const newPrice = Math.round((totalPrice - data[targetProduct].price) * 100) / 100;
+      setTotalPrice(newPrice);
       cartItemsCopy[targetProduct] = itemCopy;
       setCartItems(cartItemsCopy);
     }
@@ -45,6 +49,8 @@ function App() {
     const cartItemsCopy = [...cartItems];
     const itemCopy = cartItemsCopy[targetProduct];
     itemCopy[1] += 1;
+    const newPrice = Math.round((totalPrice + data[targetProduct].price) * 100) / 100;
+    setTotalPrice(newPrice);
     cartItemsCopy[targetProduct] = itemCopy;
     setCartItems(cartItemsCopy);
   }
@@ -54,7 +60,15 @@ function App() {
       <Header cartClicked={cartClicked} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="products" element={<Products />} />
+        <Route
+          path="products"
+          element={(
+            <Products
+              increaseQuantity={(e) => { increaseQuantity(e); }}
+              cartClicked={cartClicked}
+            />
+        )}
+        />
         <Route path="contact" element={<Contact />} />
       </Routes>
       <div className={backgroundClassName} onClick={closeCart} />
@@ -64,6 +78,7 @@ function App() {
         decreaseQuantity={(e) => { decreaseQuantity(e); }}
         increaseQuantity={(e) => { increaseQuantity(e); }}
         closeCart={closeCart}
+        totalPrice={totalPrice}
       />
     </div>
   );
